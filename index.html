@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  doc-page:not(:defined){visibility:hidden}
+  *{box-sizing:border-box}
+  body{margin:0}
+  a{color:#0B1220;text-decoration:none}
+  a:hover{opacity:.95}
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+<doc-page size="letter">
+
+  <!-- ===================== COVER ===================== -->
+  <section class="page">
+    <div style="min-height:1056px;position:relative;overflow:hidden;font-family:'Manrope',sans-serif;color:#0B1220;background:#FFFFFF">
+
+      <!-- bracket rule -->
+      <div style="position:absolute;left:310px;top:116px;width:403px;height:3px;background:#16C060"></div>
+      <div style="position:absolute;left:710px;top:116px;width:3px;height:834px;background:#16C060"></div>
+      <div style="position:absolute;left:310px;top:947px;width:403px;height:3px;background:#16C060"></div>
+      <div style="position:absolute;left:310px;top:116px;width:3px;height:143px;background:#16C060"></div>
+      <div style="position:absolute;left:310px;top:526px;width:3px;height:24px;background:#16C060"></div>
+      <div style="position:absolute;left:310px;top:705px;width:3px;height:245px;background:#16C060"></div>
+
+      <!-- leaf pattern panel -->
+      <div style="position:absolute;left:577px;top:472px;width:200px;height:572px;background:#F3F1EA;overflow:hidden">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);width:200px;padding:10px 4px 0">
+          <sc-for list="{{ leaves }}" as="leaf" hint-placeholder-count="52">
+            <div style="height:44px;display:flex;align-items:center;justify-content:center">
+              <div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate({{ leaf }}deg)"></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- header -->
+      <div style="position:absolute;left:61px;right:48px;top:37px;display:flex;align-items:center;justify-content:space-between">
+        <img src="./uploads/M3.png" alt="Magoya" style="width:54px;height:54px;display:block">
+        <div style="font-size:19px;font-weight:500;color:#0B1220">Client: <span style="font-weight:800">Bayer Argentina</span></div>
+      </div>
+
+      <!-- title block -->
+      <div style="position:absolute;left:70px;top:232px;width:520px">
+        <div style="font-size: 14px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060">Executive Summary</div>
+        <h1 style="margin:24px 0 0 -4px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:58px;line-height:1.18;letter-spacing:-0.035em;color:#0B1220">Experto Bayer<br>is now part of<br>FieldView</h1>
+        <p style="margin: 72px 0 0; font-size: 21px; line-height: 1.45; font-weight: 400; color: #0B1220; max-width: 360px">A unified digital experience for Argentine growers</p>
+        <p style="margin: 20px 0 0; font-size: 21px; font-weight: 400; color: #0B1220">— launched <span style="font-weight:800">July 14th, 2026</span></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 2 ===================== -->
+  <section class="page">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height: 30px; width: auto; display: block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 1</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Inside this summary -->
+      <div style="padding-top:38px">
+        <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060; margin-bottom: 16px">SUMMARY SECTIONS</div>
+        <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:44px;line-height:1.0;letter-spacing:-0.03em;color:#0B1220">Table of Content</h2>
+        <p style="margin:16px 0 0;font-size:16px;line-height:1.5;color:#5A6473;max-width:560px">The five sections of the full report — jump to any one of them.</p>
+      </div>
+
+      <!-- Section list -->
+      <div style="display:flex;flex-direction:column;gap:12px;padding-top:36px;flex:1">
+
+        <a href="#sec-1" style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)" style-hover="border-color:#16C060;box-shadow:0 4px 14px rgba(16,169,116,.12)">
+          <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#16C060">1</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; color: #0B1220">Problem, Solution &amp; Value</div>
+            <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:4px">The initial challenge, the solution delivered and the value created.</div>
+          </div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;align-self:center"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+
+        <a href="#sec-2" style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)" style-hover="border-color:#16C060;box-shadow:0 4px 14px rgba(16,169,116,.12)">
+          <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#16C060">2</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; color: #0B1220">Scope &amp; Deliverables</div>
+            <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:4px">What was built, migrated and integrated.</div>
+          </div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;align-self:center"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+
+        <a href="#sec-3" style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)" style-hover="border-color:#16C060;box-shadow:0 4px 14px rgba(16,169,116,.12)">
+          <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#16C060">3</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; color: #0B1220">Project Highlights</div>
+            <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:4px">What made this delivery distinctive.</div>
+          </div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;align-self:center"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+
+        <a href="#sec-4" style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)" style-hover="border-color:#16C060;box-shadow:0 4px 14px rgba(16,169,116,.12)">
+          <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#16C060">4</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; color: #0B1220">Client Testimonials</div>
+            <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:4px">How Bayer stakeholders experienced the work.</div>
+          </div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;align-self:center"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+
+        <a href="#sec-5" style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)" style-hover="border-color:#16C060;box-shadow:0 4px 14px rgba(16,169,116,.12)">
+          <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#16C060">5</div>
+          <div style="flex:1;min-width:0">
+            <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; color: #0B1220">Magoya Team &amp; Collaboration</div>
+            <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:4px">The core team behind the launch and the cross-team collaboration involved.</div>
+          </div>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex:none;align-self:center"><path d="M9 6l6 6-6 6"></path></svg>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 2 (section 1 opener) ===================== -->
+  <section class="page" id="sec-1">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height: 30px; width: auto; display: block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 2</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px;flex:none"></div>
+
+      <!-- Section opener -->
+      <div style="padding-top: 24px">
+        
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#16C060;letter-spacing:0.02em">01</div>
+          <span style="width:34px;height:1px;background:#DDF2E8"></span>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9AA3B2">Section 01 of 05</div>
+        </div>
+        <h2 style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 42px; line-height: 1.0; letter-spacing: -0.03em; color: #0B1220; text-wrap: balance">Problem, Solution &amp; Value</h2>
+        
+      </div>
+      <!-- Body: two cards side by side + wide card below -->
+      <div style="display: flex; flex-direction: column; gap: 18px; flex: 1; padding-top: 38px">
+
+        <div style="display:flex;gap:16px">
+          <div style="flex:1;min-width:0;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:19px 21px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            
+            <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060; margin-bottom: 9px">PROBLEM STATEMENT</div><div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; line-height: 1.2; color: #0B1220; margin-bottom: 14px">Two platforms, one fragmented grower journey</div>
+            <p style="margin:0 0 11px;font-size:16px;line-height:1.55;color:#5A6473;text-wrap:pretty">Growers used FieldView for activities such as visualizing field data through maps or creating prescriptions, and Experto, for personalized agronomic recommendations, environment analysis and crop monitoring.</p>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:#5A6473;text-wrap:pretty">Because these capabilities lived separately, <span style="color:#5A6473;text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">growers had to move between platforms to complete parts of the same journey</span>, creating friction and wasting time.</p>
+          </div>
+          
+        </div>
+
+        <div style="flex: none; min-width: 0; background: #fff; border: 1.4px solid #E4E8EF; border-radius: 13px; padding: 19px 21px; box-shadow: 0 1px 2px rgba(11,18,32,.04)">
+            <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060; margin-bottom: 9px">SOLUTION PROVIDED</div>
+            <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; line-height: 1.2; color: #0B1220; margin-bottom: 14px">Bring Experto into FieldView</div>
+            <p style="margin:0 0 11px;font-size:16px;line-height:1.55;color:#5A6473;text-wrap:pretty">Magoya designed and delivered an <span style="color:#5A6473;text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">integrated experience that brought Experto’s capabilities and key workflows into FieldView</span>, while preserving FieldView’s&nbsp; product sense and identity.</p>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:#5A6473;text-wrap:pretty">The solution also enabled Growers to migrate all their pre-existing data, (e.g fields) seamlessly from one platform to the other .</p>
+          </div><div style="background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:19px 22px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+          <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060; margin-bottom: 9px">VALUE CREATED</div>
+          <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 19px; line-height: 1.2; color: #0B1220; margin-bottom: 14px">An all-in-one digital experience</div>
+          <p style="margin:0 0 11px;font-size:16px;line-height:1.55;color:#5A6473;text-wrap:pretty"><b style="color: #242625">For Growers</b>, the solution provides a <span style="color:#5A6473;text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">more robust, centralized experience</span>, with all capabilities accessible from one place.</p>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#5A6473;text-wrap:pretty"><b style="color: #242625">For Bayer</b>, the integration strengthens FieldView as the core digital customer platform, and establishes a foundation for future initiatives, integrations and <span style="color:#5A6473;text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">commercial impact</span>.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 3 (section 2 opener) ===================== -->
+  <section class="page" id="sec-2">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height: 30px; width: auto; display: block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 3</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Section opener -->
+      <div style="padding-top: 24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#16C060;letter-spacing:0.02em">02</div>
+          <span style="width:34px;height:1px;background:#DDF2E8"></span>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9AA3B2">Section 02 of 05</div>
+        </div>
+        <h2 style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 42px; line-height: 1.0; letter-spacing: -0.03em; color: #0B1220; text-wrap: balance">Scope &amp; Deliverables</h2>
+        
+        <div style="margin-top:22px">
+          <a href="https://drive.google.com/file/d/1wcKRhktGsqPBqJOUSX3j4TM-RW6mLTtF/view" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 12px; background: #0B1220; color: #fff; font-weight: 600; font-size: 15px; padding: 13px 22px; border-radius: 10px; border: 1.4px solid #0B1220; text-decoration: none; box-shadow: 0 2px 6px rgba(11,18,32,.14); padding-left: 24px; padding-right: 24px; padding-top: 11px; padding-bottom: 11px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#16C060" style="width: 19px; height: 19px"><path d="M8 5v14l11-7z"></path></svg> Watch demo
+          </a>
+        </div>
+      </div>
+
+      
+
+      <!-- Deliverables 01–02 -->
+      <div style="display: flex; flex-direction: column; gap: 18px; flex: 1; padding-top: 40px">
+
+        <div style="background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:17px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:12px">
+            <div style="flex:none;width:34px;height:34px;border-radius:9px;background:#EDFAF3;display:flex;align-items:center;justify-content:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></div>
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#0B1220">A Scalable Design System</div>
+          </div>
+          <p style="margin: 0 0 9px; font-size: 16px; line-height: 1.55; color: #5A6473; text-wrap: pretty">A new UI component library was created to rebuild Experto’s capabilities within FieldView.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #5A6473; text-wrap: pretty">Beyond supporting this launch, the <span style="color:#515966;text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">system streamlines the design-to-development handoff</span> and provides a reusable, consistent foundation for future product initiatives</p>
+        </div>
+
+        <div style="background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:20px 22px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:12px">
+            <div style="flex:none;width:34px;height:34px;border-radius:9px;background:#EDFAF3;display:flex;align-items:center;justify-content:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h13"></path><path d="M12 7l5 5-5 5"></path><path d="M21 4v16"></path></svg></div>
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#0B1220">An End-to-End User Migration Journey</div>
+          </div>
+          <p style="margin: 0 0 9px; font-size: 16px; line-height: 1.55; color: #5A6473; text-wrap: pretty">A guided user experience, supported by a complete migration logic that identifies each account scenario to bring their existing Experto data into FieldView.</p>
+          
+
+          <div style="margin-top: 16px; border-top: 1px solid #EAEDF2; padding-top: 16px">
+            <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+              <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060">First Week Performance Snapshot</div>
+              <div style="font-size:12px;color:#9AA3B2">Since July 14, 2026</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 10px; padding-top: 6px">
+              <div style="border: 1.4px solid #16C060; border-radius: 11px; padding: 13px 15px; background-color: #F2FBF699; padding-top: 14px; padding-bottom: 14px; border-width: 1.2px">
+                <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+                  <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em;color:#0B1220">264</div>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"></circle><path d="M8.4 12.3l2.5 2.5 4.7-5"></path></svg>
+                </div>
+                <div style="font-size:13px;line-height:1.3;color:#3D7A5B;font-weight:600;margin-top:6px">Successful Migrations <span style="color:#3D7A5B">(96.6%)</span></div>
+              </div>
+              <div style="background: #fff; border: 1px solid #E4E8EF; border-radius: 11px; padding: 13px 15px; padding-top: 14px; padding-bottom: 14px">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em;color:#0B1220">594</div>
+                <div style="font-size:13px;line-height:1.3;color:#5A6473;font-weight:600;margin-top:6px">Fields imported</div>
+              </div>
+              <div style="background: #fff; border: 1px solid #E4E8EF; border-radius: 11px; padding: 13px 15px; padding-top: 14px; padding-bottom: 14px">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1;letter-spacing:-0.02em;color:#0B1220">36</div>
+                <div style="font-size:13px;line-height:1.3;color:#5A6473;font-weight:600;margin-top:6px">Fields merged</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 18px; border-top: 1px solid #EAEDF2; padding-top: 16px; margin-bottom: 6px">
+              <div style="font-size: 15px; font-weight: 700; color: #0B1220; margin-bottom: 11px; margin-top: 6px">Migration cases identified <span style="font-weight:500;color:#9AA3B2">— each scenario required its own flow</span></div>
+              <div style="display: flex; flex-direction: column; gap: 9px; margin-top: 18px">
+                <div style="display:grid;grid-template-columns:170px 1fr 96px;align-items:center;gap:12px">
+                  <div style="font-size:14px;color:#5A6473">No fields to import</div>
+                  <div style="height:10px;border-radius:999px;background:#F3F5F8"><div style="width:100%;height:10px;border-radius:999px;background:#16C060"></div></div>
+                  <div style="font-size:14px;font-weight:700;color:#0B1220;text-align:right">179 <span style="font-weight:600;color:#9AA3B2">(55.8%)</span></div>
+                </div>
+                <div style="display:grid;grid-template-columns:170px 1fr 96px;align-items:center;gap:12px">
+                  <div style="font-size:14px;color:#5A6473">Merge opportunity</div>
+                  <div style="height:10px;border-radius:999px;background:#F3F5F8"><div style="width:41%;height:10px;border-radius:999px;background:#4CCF8B"></div></div>
+                  <div style="font-size:14px;font-weight:700;color:#0B1220;text-align:right">74 <span style="font-weight:600;color:#9AA3B2">(23.1%)</span></div>
+                </div>
+                <div style="display:grid;grid-template-columns:170px 1fr 96px;align-items:center;gap:12px">
+                  <div style="font-size:14px;color:#5A6473">Fields to import</div>
+                  <div style="height:10px;border-radius:999px;background:#F3F5F8"><div style="width:38%;height:10px;border-radius:999px;background:#8FE0B8"></div></div>
+                  <div style="font-size:14px;font-weight:700;color:#0B1220;text-align:right">68 <span style="font-weight:600;color:#9AA3B2">(21.2%)</span></div>
+                </div>
+                <div style="display:grid;grid-template-columns:170px 1fr 96px;align-items:center;gap:12px">
+                  <div style="font-size:14px;color:#5A6473">Account not found</div>
+                  <div style="height:10px;border-radius:999px;background:#F3F5F8"><div style="width:2px;height:10px;border-radius:999px;background:#C9D3DE"></div></div>
+                  <div style="font-size:14px;font-weight:700;color:#9AA3B2;text-align:right">0 <span style="font-weight:600;color:#C0C7D2">(0%)</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 5 (section 2 continued) ===================== -->
+  <section class="page">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height:30px;width:auto;display:block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 4</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Continuation label -->
+      <div style="display:flex;align-items:center;gap:14px;padding-top:24px;margin-bottom:14px">
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#16C060;letter-spacing:0.02em">02</div>
+        <span style="width:34px;height:1px;background:#DDF2E8"></span>
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9AA3B2">Scope &amp; Delivery — continued</div>
+      </div>
+
+      <!-- Deliverables 03–05 -->
+      <div style="display: flex; flex-direction: column; gap: 18px; flex: 1; padding-top: 38px">
+
+        <div style="border: 1.4px solid #E4E8EF; border-radius: 13px; padding: 20px 22px; box-shadow: 0 1px 2px rgba(11,18,32,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:12px">
+            <div style="flex:none;width:34px;height:34px;border-radius:9px;background:#EDFAF3;display:flex;align-items:center;justify-content:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg></div>
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#0B1220">Eight Capabilities from Experto</div>
+          </div>
+          <p style="margin: 0 0 13px; font-size: 16px; line-height: 1.55; color: #5A6473; text-wrap: pretty">Experto’s core agronomic capabilities were rebuilt and integrated into Fieldview's experience.</p>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#BFE9D2;border:1px solid #BFE9D2;border-radius:11px;overflow:hidden">
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">01</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">Dekalb Monitoring</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Track crop progress and field status throughout the season.</div>
+            </div>
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">02</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">Recommendations Table</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Review and manage all recommendations in one place.</div>
+            </div>
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">03</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">Hybrid Recommendations</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Find the best hybrid for each field’s conditions.</div>
+            </div><div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">04</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">CP Recommendations</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Choose approach for each situation.</div>
+            </div>
+            
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">05</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15px; line-height: 1.2; color: #0B1220; text-wrap: pretty">N-Smart Recommendation</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Make more informed nitrogen application decisions.</div>
+            </div>
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">06</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">Product Catalogs</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Access relevant product information.</div>
+            </div>
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">07</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">Weed Finder</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Identify weeds affecting the field.</div>
+            </div>
+            <div style="background:#fff;padding:13px 14px 15px;display:flex;flex-direction:column">
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.06em; color: #16C060; margin-bottom: 14px">08</div>
+              <div style="font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.2; color: #0B1220; text-wrap: pretty">Seed Quality</div>
+              <div style="font-size: 13.5px; line-height: 1.4; color: #5A6473; margin-top: 6px; text-wrap: pretty">Access seed quality insights alongside field information.</div>
+            </div>
+            <div style="background:#fff"></div>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:17px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+          <div style="display:flex;align-items:center;gap:13px;margin-bottom:12px">
+            <div style="flex:none;width:34px;height:34px;border-radius:9px;background:#EDFAF3;display:flex;align-items:center;justify-content:center"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.6"></circle><circle cx="18" cy="6" r="2.6"></circle><circle cx="12" cy="18" r="2.6"></circle><path d="M7.6 7.8L11 15.6"></path><path d="M16.4 7.8L13 15.6"></path><path d="M8.6 6h6.8"></path></svg></div>
+            <div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#0B1220">A Sub-domain Integration Model</div>
+              <div style="font-size:15px;line-height:1.35;color:#5A6473;margin-top:3px">Non-invasive integration</div>
+            </div>
+          </div>
+          <p style="margin: 0 0 15px; font-size: 16px; line-height: 1.55; color: #5A6473; text-wrap: pretty; margin-bottom: 20px">A non-invasive integration architecture that embeds Experto capabilities inside FieldView without altering its database - while also <span style="text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">keeping fields, shared operations, and user preferences in sync across the full product</span>.</p>
+                  </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 5 (section 03 — project highlights) ===================== -->
+  <section class="page" id="sec-3">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height:30px;width:auto;display:block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 5</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Section opener -->
+      <div style="padding-top: 24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#16C060;letter-spacing:0.02em">03</div>
+          <span style="width:34px;height:1px;background:#DDF2E8"></span>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9AA3B2">Section 03 of 05</div>
+        </div>
+        <h2 style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 42px; line-height: 1.0; letter-spacing: -0.03em; color: #0B1220; text-wrap: balance">Project Highlights</h2>
+      </div>
+
+      <div style="padding-top:38px;flex:1">
+        <div style="display: flex; flex-direction: column; gap: 18px">
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"></path><path d="M3 8l9 5 9-5"></path><path d="M12 13v10"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.2;color:#0B1220">Built Inside Bayer’s Ecosystem</div>
+              <div style="font-size:16px;line-height:1.55;color:#5A6473;margin-top:5px">The project was built and operated within Bayer’s tech environment, using its cloud infrastructure and monitoring tools.</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+                <span style="font-size:13px;font-weight:600;color:#0B1220;background:#F3F5F8;border:1px solid #E4E8EF;border-radius:8px;padding:7px 12px;flex:none;white-space:nowrap">Runs on Bayer’s cloud (GCP)</span>
+                <span style="font-size:13px;font-weight:600;color:#0B1220;background:#F3F5F8;border:1px solid #E4E8EF;border-radius:8px;padding:7px 12px;flex:none;white-space:nowrap">Monitored via Bayer's Datadog account</span>
+                
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.2;color:#0B1220">Delivered at Speed</div>
+              <div style="font-size:16px;line-height:1.55;color:#5A6473;margin-top:5px">From technical onboarding to launch in approximately four and a half months, adapting the delivery as requirements&nbsp; evolved and <span style="text-decoration:underline;text-decoration-color:#06D152;text-decoration-thickness:1.2px;text-underline-offset:3px">without compromising quality</span>.</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+                <span style="font-size:13px;font-weight:600;color:#0B1220;background:#F3F5F8;border:1px solid #E4E8EF;border-radius:8px;padding:7px 12px;flex:none;white-space:nowrap">4.5 mths onboarding to launch</span>
+                <span style="font-size:13px;font-weight:600;color:#0B1220;background:#F3F5F8;border:1px solid #E4E8EF;border-radius:8px;padding:7px 12px;flex:none;white-space:nowrap">Senior-level team</span>
+                <span style="font-size:13px;font-weight:600;color:#0B1220;background:#F3F5F8;border:1px solid #E4E8EF;border-radius:8px;padding:7px 12px;flex:none;white-space:nowrap">No quality trade-offs</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6l8-3z"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.2;color:#0B1220">Aligned with Enterprise Security Standards</div>
+              <div style="font-size:16px;line-height:1.55;color:#5A6473;margin-top:5px">Magoya worked closely with dedicated Bayer security stakeholders to ensure the integration met all security guidelines and required recommendations before launch.</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 20px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"></path><circle cx="12" cy="12" r="9"></circle><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.2;color:#0B1220">Coordinated Across Teams and Regions</div>
+              <div style="font-size:16px;line-height:1.55;color:#5A6473;margin-top:5px">Magoya helped align local, regional and global Bayer teams across countries, functions and organizational levels, building the trust and working relationships needed for a succesfull delivery and to support future initiatives.</div>
+              <a href="#sec-map" style="display: inline-flex; align-items: center; gap: 7px; margin-top: 11px; font-size: 14px; font-weight: 700; color: #16C060; text-decoration: none; border-bottom: 1.5px solid #B6E9CE; padding-bottom: 2px">Collaboration map on next page<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M12 5l7 7-7 7"></path></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 6 (collaboration map) ===================== -->
+  <section class="page" id="sec-map" data-screen-label="06">
+    <div style="height:100%;padding:44px 50px 40px;display:flex;flex-direction:column;font-family:'Manrope',sans-serif;color:#0B1220;background:#FFFFFF;padding-top:40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height:30px;width:auto;display:block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 6</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <div style="padding-top:24px;display:flex;flex-direction:column;flex:1;min-height:0">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px">
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#16C060">Collaboration Map</div>
+          <span style="flex:1;height:1px;background:#DDF2E8"></span>
+        </div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;line-height:1.25;color:#0B1220">Teams Coordinated Across the Americas</div>
+        <div style="flex:1;min-height:0;margin-top:14px;background:#FFFFFF;border:1.4px solid #E4E8EF;border-radius:13px;box-shadow:0 1px 2px rgba(11,18,32,.04);overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 16px 12px">
+          
+          <img src="./teams-map-v3.png" alt="Collaboration network of Bayer and Magoya teams across the Americas" style="flex: 1; min-height: 0; width: auto; max-width: 100%; object-fit: contain; display: block; padding-top: 10px; padding-bottom: 10px"><div style="font-size: 15px; line-height: 1.45; color: #9AA3B2; text-align: center; padding-top: 10px; max-width: 520px; text-wrap: pretty">Magoya at the center of the delivery, coordinating with local teams in Argentina, Global in EEUU, and UX functions in Brasil</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 7 (section 04 — client testimonials) ===================== -->
+  <section class="page" id="sec-4">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height:30px;width:auto;display:block">
+        <div style="display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 7</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Section opener -->
+      <div style="padding-top: 24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#16C060;letter-spacing:0.02em">04</div>
+          <span style="width:34px;height:1px;background:#DDF2E8"></span>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9AA3B2">Section 04 of 05</div>
+        </div>
+        <h2 style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 42px; line-height: 1.0; letter-spacing: -0.03em; color: #0B1220; text-wrap: balance">Client Testimonials</h2>
+      </div>
+
+      <div style="padding-top: 38px; flex: 1; display: flex; flex-direction: column; gap: 40px">
+<blockquote style="margin: 0; border-left: 3px solid #16C060; padding: 8px 0 8px 22px">
+            <p style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-style: italic; font-weight: 300; font-size: 16px; line-height: 1.55; color: #0B1220; text-wrap: pretty">“I meant every word. The work ethic of our group was outstanding and uncomplicated. I like the way we meet every week, incrementally build in manageable chunks instead of overwhelming ourselves”</p>
+            <div style="display:flex;align-items:center;gap:13px;margin-top:22px">
+              <img src="./suresh-avatar.png" alt="Suresh Ramamoorthy" style="flex:none;width:52px;height:52px;border-radius:999px;display:block;object-fit:cover;background:#EDFAF3">
+              <div style="display:flex;flex-direction:column;gap:3px">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;line-height:1.1;color:#0B1220">Suresh Ramamoorthy</div>
+                <div style="font-size:13px;line-height:1.25;color:#5A6473">Senior Technical Program Manager, Bayer</div>
+              </div>
+            </div>
+          </blockquote>
+<blockquote style="margin: 0; border-left: 3px solid #16C060; padding: 2px 0 2px 22px; padding-top: 8px; padding-bottom: 8px">
+            <p style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-style: italic; font-weight: 300; font-size: 16px; line-height: 1.55; color: #0B1220; text-wrap: pretty">“This integration represents a huge step forward in how we connect technology with commercial impact. It brings together the best of both worlds: digital agronomy &amp; product portfolio, it strengthens FieldView as a strategic platform for customer engagement and it unlocks new opportunities to scale up impact across regions and crops.<br></p><p style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-style: italic; font-weight: 300; font-size: 16px; line-height: 1.55; color: #0B1220; text-wrap: pretty; padding-top: 8px">None of this would have been possible without the incredible collaboration across teams. We’re proud of what we’ve built together, and even more excited about what’s ahead”</p>
+            <div style="display:flex;align-items:center;gap:13px;margin-top:22px">
+              <img src="./sofia-avatar.png" alt="Sofía" style="flex:none;width:52px;height:52px;border-radius:999px;display:block;background:#EDFAF3">
+              <div style="display:flex;flex-direction:column;gap:3px">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;line-height:1.1;color:#0B1220">Sofía</div>
+                <div style="font-size:13px;line-height:1.25;color:#5A6473">Product Lead, Bayer Argentina</div>
+              </div>
+            </div>
+          </blockquote>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PAGE 8 (section 05 — team & collaboration) ===================== -->
+  <section class="page" id="sec-5">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height:30px;width:auto;display:block">
+        <div style="display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Page 8</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Section opener -->
+      <div style="padding-top: 24px">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:15px;color:#16C060;letter-spacing:0.02em">05</div>
+          <span style="width:34px;height:1px;background:#DDF2E8"></span>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#9AA3B2">Section 05 of 05</div>
+        </div>
+        <h2 style="margin: 0; font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 42px; line-height: 1.0; letter-spacing: -0.03em; color: #0B1220; text-wrap: balance">Magoya Team &amp; Collaboration</h2>
+      </div>
+
+      <div style="padding-top: 38px; display: flex; flex-direction: column; gap: 40px">
+
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px">
+            <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060">Delivery Team</div>
+            <span style="flex:1;height:1px;background:#DDF2E8"></span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-paula.png" alt="Paula Frías" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#F3F5F8">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Paula Frías</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior Product Manager</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-joaco.png" alt="Joaquín Díaz" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#F3F5F8">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Joaquín Díaz</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Tech Manager<br><br></div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-diego.png" alt="Diego Díaz Barroso" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#F3F5F8">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Diego D. Barroso</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior Full Stack Developer</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-luca.png" alt="Luca Cantarelli" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#F3F5F8">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Luca Cantarelli</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior UX/UI Product Designer</div>
+              </div>
+            </div><div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-fabian.png" alt="Fabián Cabrera" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#F3F5F8">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Fabián Cabrera</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior Frontend Developer</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-manuel.png" alt="Manuel Sosa" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#F3F5F8">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Manuel Sosa</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior Frontend Developer</div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px">
+            <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060">SUPPORT ROLES</div>
+            <span style="flex:1;height:1px;background:#DDF2E8"></span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-fran.png" alt="Fran" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#fff">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Fran</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior Product Manager</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-gaston.png" alt="Gastón Donnet" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#fff">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Gastón Donnet</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Senior Fullstack Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px">
+            <div style="font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #16C060">Leadership</div>
+            <span style="flex:1;height:1px;background:#DDF2E8"></span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-pato.png" alt="Pato Facal" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#fff">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Pato Facal</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Chief Technology Officer</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-facu.png" alt="Facundo" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#fff">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Facundo</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Chief Product Officer</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:13px 14px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+              <img src="./team-cami.png" alt="Camila" style="flex:none;width:46px;height:46px;border-radius:999px;display:block;background:#fff">
+              <div style="min-width:0">
+                <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;line-height:1.15;color:#0B1220">Camila</div>
+                <div style="font-size:14px;line-height:1.3;color:#5A6473;margin-top:3px">Chief Agronomy Officer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== DRAFT (kept, not part of the flow) ===================== -->
+  <section class="page">
+    <div style="height: 100%; padding: 44px 50px 40px; display: flex; flex-direction: column; font-family: 'Manrope',sans-serif; color: #0B1220; background: #FFFFFF; padding-top: 40px">
+
+      <!-- Header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:24px">
+        <img src="./uploads/Magoya.png" alt="Magoya" style="height:32px;width:auto;display:block">
+        <div style="display:flex;align-items:center;gap:8px;font-size:11.5px;font-weight:600">
+          <span style="color:#0B1220;font-weight:700">Bayer Argentina</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">July 22, 2026</span>
+          <span style="color:#CBD2DC">/</span>
+          <span style="color:#9AA3B2">Draft</span>
+        </div>
+      </div>
+      <div style="height:1px;background:#EAEDF2;margin-top:18px"></div>
+
+      <!-- Hero -->
+      <div style="padding-top:46px">
+        <div style="font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#16C060;margin-bottom:16px">Executive Summary</div>
+        <h1 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:64px;line-height:0.98;letter-spacing:-0.03em;color:#0B1220;text-wrap:balance">Experto Bayer is now<br>part of FieldView</h1>
+        <p style="margin:18px 0 0;font-size:16px;line-height:1.5;color:#5A6473;max-width:560px;text-wrap:pretty">A unified digital experience for Argentine growers — <span style="color:#0B1220;font-weight:700">launched July 14, 2026.</span></p>
+        <div style="display:flex;align-items:center;gap:11px;margin-top:24px">
+          <a href="#" style="display:inline-flex;align-items:center;gap:8px;background:#0B1220;color:#fff;font-weight:700;font-size:13px;padding:11px 19px;border-radius:9px">Watch Product Demo<span style="font-size: 14px;">→</span></a>
+          <button onClick="{{ printPdf }}" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0B1220;font-weight:700;font-size:13px;padding:11px 19px;border-radius:9px;border:1.4px solid #DCE1E9;cursor:pointer;font-family:'Manrope',sans-serif">
+            <span style="font-size:13px">↓</span> Download PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- Key highlights -->
+      <div style="display:flex;flex-direction:column;padding-top:60px;flex:1">
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:0.17em;text-transform:uppercase;color:#0B1220;margin-bottom:16px">Key Highlights</div>
+        <div style="display:flex;flex-direction:column;gap:12px;flex:1">
+
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 19px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#0B1220">Delivered at Speed</div>
+              <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:5px">From technical onboarding to launch in approximately four months, adapting the delivery as requirements and dependencies evolved.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 19px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"></path><path d="M3 8l9 5 9-5"></path><path d="M12 13v10"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#0B1220">Built Inside Bayer’s Ecosystem</div>
+              <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:5px">Designed and delivered within Bayer’s technology environment, integrating with FieldView while preserving its global core.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 19px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6l8-3z"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#0B1220">Security-Ready for Enterprise Scale</div>
+              <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:5px">Delivered in alignment with Bayer’s global security standards and recommendations.</div>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.4px solid #E4E8EF;border-radius:13px;padding:18px 19px;box-shadow:0 1px 2px rgba(11,18,32,.04)">
+            <div style="flex:none;width:38px;height:38px;border-radius:10px;background:#EDFAF3;display:flex;align-items:center;justify-content:center">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#16C060" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"></path></svg>
+            </div>
+            <div style="flex:1;min-width:0">
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:17px;color:#0B1220">One Delivery Across Teams and Regions</div>
+              <div style="font-size:16px;line-height:1.45;color:#5A6473;margin-top:5px">Local, regional and global Bayer teams collaborated across countries and functions to deliver one connected product experience.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const leaves = [];
+    for (let r = 0; r < 14; r++) for (let c = 0; c < 4; c++) leaves.push((r + c) % 2 ? 225 : 45);
+    return { printPdf: () => window.print(), leaves };
+  }
+}
+</script>
+</body>
+</html>
+
