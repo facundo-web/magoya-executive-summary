@@ -2,7 +2,7 @@
 
 Executive summary document, published as a static page.
 
-- **Live page:** https://summary.magoya.com/
+- **Live page:** https://work.magoya.com/
 - **Video:** [Watch on Google Drive](https://drive.google.com/file/d/1wcKRhktGsqPBqJOUSX3j4TM-RW6mLTtF/view)
 
 ## Structure
