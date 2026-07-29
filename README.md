@@ -2,7 +2,7 @@
 
 Executive summary document, published as a static page.
 
-- **Live page:** https://facundo-web.github.io/magoya-executive-summary/
+- **Live page:** https://summary.magoya.com/
 - **Video:** [Watch on Google Drive](https://drive.google.com/file/d/1wcKRhktGsqPBqJOUSX3j4TM-RW6mLTtF/view)
 
 ## Structure
