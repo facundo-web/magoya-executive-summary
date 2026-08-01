@@ -24,6 +24,7 @@ a:hover { color: #13BC64; }
 a[data-toc] > div { transition: background .15s, box-shadow .15s; }
 a[data-toc]:hover > div { background: #F9FAFB; box-shadow: 0 12px 40px rgba(0,0,0,0.10); }
 .page { position: relative; }
+.page:first-of-type::after { right: auto; left: 22px; }
 .page::after { content: 'Bayer Confidential'; position: absolute; right: 22px; bottom: 14px; z-index: 60; font-family: 'JetBrains Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(107,114,128,0.5); pointer-events: none; }
 </style>
 <script src="./doc-page.js"></script>
@@ -34,47 +35,70 @@ a[data-toc]:hover > div { background: #F9FAFB; box-shadow: 0 12px 40px rgba(0,0,
 
   <!-- bracket rule (same visual language as the FieldView executive summary cover) -->
   <div style="position:absolute;left:330px;top:150px;width:386px;height:3px;background:#13BC64"></div>
-  <img src="assets/experto-bayer-logo.svg" alt="Experto Bayer" style="position:absolute;right:124px;top:174px;height:42px;width:auto">
 
   <div style="position:absolute;left:713px;top:150px;width:3px;height:420px;background:#13BC64"></div>
   <div style="position:absolute;left:330px;top:150px;width:3px;height:60px;background:#13BC64"></div>
   <div style="position:absolute;left:330px;top:470px;width:3px;height:100px;background:#13BC64"></div>
 
   <!-- leaf pattern panel -->
-  <div style="position:absolute;right:60px;top:600px;width:200px;height:340px;background:#F3F1EA;overflow:hidden">
+  <div style="position:absolute;left:577px;top:472px;width:200px;height:572px;background:#F3F1EA;overflow:hidden">
     <div style="display:grid;grid-template-columns:repeat(4,1fr);width:200px;padding:10px 4px 0">
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(270deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(90deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(0deg)"></div></div>
-      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(180deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(225deg)"></div></div>
+      <div style="height:44px;display:flex;align-items:center;justify-content:center"><div style="width:52px;height:26px;background:#0BD65F;border-radius:52px 52px 0 0;transform:rotate(45deg)"></div></div>
     </div>
   </div>
 
@@ -93,6 +117,7 @@ a[data-toc]:hover > div { background: #F9FAFB; box-shadow: 0 12px 40px rgba(0,0,
       <div style="display:flex;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#6B7280">
         <span>MARCH 2025</span><span>·</span><span>JULY 2026</span><span>·</span><span>BAYER ARGENTINA &amp; URUGUAY</span>
       </div>
+      <img src="assets/experto-bayer-logo.svg" alt="Experto Bayer" style="height:46px;width:auto;display:block;align-self:flex-start;margin-top:32px">
     </div>
 
     <sc-if value="{{ showCoverHighlights }}" hint-placeholder-val="{{ true }}">
@@ -595,35 +620,35 @@ a[data-toc]:hover > div { background: #F9FAFB; box-shadow: 0 12px 40px rgba(0,0,
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">FM</div>
+        <img src="assets/team-fran.png" alt="Francisco Montero" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Francisco Montero</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Senior Product Manager</span>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">VP</div>
+        <img src="assets/team-victoria.png" alt="Victoria Perrote" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Victoria Perrote</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Senior UX/UI Designer</span>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">CD</div>
+        <img src="assets/team-cande.png" alt="Candela Dengra" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Candela Dengra</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Senior Fullstack Developer</span>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">GD</div>
+        <img src="assets/team-gaston.png" alt="Gastón Donnet" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Gastón Donnet</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Senior Fullstack Developer</span>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">JD</div>
+        <img src="assets/team-joaco.png" alt="Joaquín Díaz" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Joaquín Díaz</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Tech Manager</span>
@@ -639,14 +664,14 @@ a[data-toc]:hover > div { background: #F9FAFB; box-shadow: 0 12px 40px rgba(0,0,
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">FI</div>
+        <img src="assets/team-facu.png" alt="Facundo Irigoitía" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Facundo Irigoitía</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Chief Product Officer</span>
         </div>
       </div>
       <div style="display:flex;align-items:center;gap:13px;border:1px solid #E5E7EB;border-radius:16px;padding:15px 17px">
-        <div style="flex:none;width:38px;height:38px;border-radius:9999px;background:rgba(19,188,100,0.12);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#097A3D">CL</div>
+        <img src="assets/team-cami.png" alt="Camila López Colmano" style="flex:none;width:38px;height:38px;border-radius:9999px;object-fit:cover;background:#F3F4F6">
         <div style="display:flex;flex-direction:column;gap:2px">
           <span style="font-size:14.5px;font-weight:700;color:#0D1117">Camila López Colmano</span>
           <span style="font-size:12.5px;line-height:1.35;color:#6B7280">Chief Agronomist Officer</span>
