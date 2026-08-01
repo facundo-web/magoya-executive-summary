@@ -1,12 +1,22 @@
-# Magoya — Executive Summary (July 2026)
+# Magoya — Our Work (client-facing case documents)
 
-Executive summary document, published as a static page.
+Static case documents published at https://work.magoya.com/
 
-- **Live page:** https://work.magoya.com/migration-experto-to-fieldview/
-- **Video:** [Watch on Google Drive](https://drive.google.com/file/d/1wcKRhktGsqPBqJOUSX3j4TM-RW6mLTtF/view)
+## Cases
+
+- **Experto Bayer — Executive Closing Report**: https://work.magoya.com/experto-bayer-closing-report/
+- **Experto Bayer → FieldView migration**: https://work.magoya.com/migration-experto-to-fieldview/
+  - [Video on Google Drive](https://drive.google.com/file/d/1wcKRhktGsqPBqJOUSX3j4TM-RW6mLTtF/view)
 
 ## Structure
 
-- `migration-experto-to-fieldview/` — the document (letter-sized pages, print-ready)
-- `migration-experto-to-fieldview/doc-page.js` / `support.js` — page layout runtime
-- `*.png` — team photos, avatars, map and logo assets
+- `index.html` — landing page listing all cases
+- `<case-slug>/index.html` — each case document (letter-sized pages, print-ready)
+- `<case-slug>/doc-page.js` / `support.js` — page layout runtime
+- Every page of every case carries a subtle "Bayer Confidential" footer mark (`.page::after`)
+
+## Conventions
+
+- New cases go in their own lowercase folder: `work.magoya.com/<case-slug>/`
+- Slugs: lowercase, full product names (no abbreviations)
+- Add the case to the root `index.html` list
